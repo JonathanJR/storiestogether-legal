@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories Together — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1a1a2e; background: #f8f9fa; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .lang-switch { text-align: right; margin-bottom: 24px; }
+        .lang-switch a { color: #FF7043; text-decoration: none; font-size: 14px; }
+        h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a2e; }
+        .subtitle { color: #6c757d; margin-bottom: 32px; font-size: 14px; }
+        h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a1a2e; border-bottom: 2px solid #FF7043; padding-bottom: 4px; display: inline-block; }
+        p, li { margin-bottom: 8px; color: #495057; }
+        ul { padding-left: 24px; }
+        a { color: #FF7043; }
+        .contact-box { background: #fff3e0; border: 1px solid #ffcc80; border-radius: 8px; padding: 20px; margin: 24px 0; }
+        .contact-box p { margin-bottom: 6px; }
+        .faq-item { background: #ffffff; border: 1px solid #dee2e6; border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+        .faq-item strong { color: #1a1a2e; display: block; margin-bottom: 6px; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #dee2e6; color: #6c757d; font-size: 13px; }
+        .es, .en { display: none; }
+        .es { display: block; }
+    </style>
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.es,.en').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'block');
+            document.documentElement.lang = lang;
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch">
+        <a href="#" onclick="switchLang('es'); return false;">Espa&ntilde;ol</a> |
+        <a href="#" onclick="switchLang('en'); return false;">English</a>
+    </div>
+
+    <!-- ESPAÑOL -->
+    <div class="es">
+        <h1>Soporte &mdash; Stories Together</h1>
+        <p class="subtitle">Estamos aqu&iacute; para ayudarte</p>
+
+        <h2>Contacto</h2>
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a></p>
+            <p>Responderemos a tu consulta en un plazo m&aacute;ximo de 48 horas.</p>
+        </div>
+
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="faq-item">
+            <strong>&iquest;Qu&eacute; es Stories Together?</strong>
+            Stories Together es una plataforma de escritura colaborativa donde los usuarios crean historias de forma conjunta. Un usuario inicia una historia y otros contribuyen con p&aacute;rrafos candidatos. La comunidad vota para decidir c&oacute;mo contin&uacute;a cada historia.
+        </div>
+
+        <div class="faq-item">
+            <strong>&iquest;C&oacute;mo funciona el sistema de votaciones?</strong>
+            Cuando un usuario env&iacute;a un p&aacute;rrafo candidato para continuar una historia, la comunidad puede votar por sus favoritos. El p&aacute;rrafo con m&aacute;s votos se a&ntilde;ade a la historia. As&iacute;, las historias se construyen colectivamente.
+        </div>
+
+        <div class="faq-item">
+            <strong>&iquest;C&oacute;mo creo una historia?</strong>
+            Pulsa el bot&oacute;n de crear, elige un t&iacute;tulo, escribe el primer p&aacute;rrafo y selecciona hasta 2 g&eacute;neros (Acci&oacute;n, Aventura, Comedia, Drama, Fantas&iacute;a, Terror, Misterio, Ciencia Ficci&oacute;n, Romance, Thriller, y m&aacute;s).
+        </div>
+
+        <div class="faq-item">
+            <strong>&iquest;Qu&eacute; es el sistema de puntos?</strong>
+            Ganas puntos al crear historias, contribuir con p&aacute;rrafos, ganar votaciones y recibir likes. Los puntos reflejan tu participaci&oacute;n y contribuci&oacute;n a la comunidad.
+        </div>
+
+        <div class="faq-item">
+            <strong>&iquest;Puedo reportar contenido inapropiado?</strong>
+            S&iacute;. Cada historia y p&aacute;rrafo candidato tiene una opci&oacute;n de reporte. Adem&aacute;s, la app cuenta con detecci&oacute;n autom&aacute;tica de contenido t&oacute;xico para mantener un ambiente respetuoso.
+        </div>
+
+        <div class="faq-item">
+            <strong>&iquest;Qu&eacute; m&eacute;todos de inicio de sesi&oacute;n hay disponibles?</strong>
+            Puedes registrarte con email y contrase&ntilde;a, o iniciar sesi&oacute;n con Google, Twitter, Microsoft o Facebook.
+        </div>
+
+        <div class="faq-item">
+            <strong>&iquest;Mis datos est&aacute;n seguros?</strong>
+            S&iacute;. Utilizamos Firebase de Google con cifrado HTTPS y reglas de seguridad para proteger tus datos. Las historias que publicas son visibles para la comunidad, pero tus datos personales de cuenta est&aacute;n protegidos.
+        </div>
+
+        <div class="faq-item">
+            <strong>&iquest;C&oacute;mo elimino mi cuenta?</strong>
+            Ve a Ajustes y selecciona "Eliminar cuenta". Tambi&eacute;n puedes solicitarlo enviando un email a <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a> con el asunto "Solicitud de eliminaci&oacute;n de cuenta &mdash; Stories Together".
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 JJR Dev Apps. Todos los derechos reservados.</p>
+        </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="en">
+        <h1>Support &mdash; Stories Together</h1>
+        <p class="subtitle">We're here to help</p>
+
+        <h2>Contact</h2>
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a></p>
+            <p>We will respond to your inquiry within 48 hours.</p>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <strong>What is Stories Together?</strong>
+            Stories Together is a collaborative storytelling platform where users create stories together. One user starts a story and others contribute candidate paragraphs. The community votes to decide how each story continues.
+        </div>
+
+        <div class="faq-item">
+            <strong>How does the voting system work?</strong>
+            When a user submits a candidate paragraph to continue a story, the community can vote for their favorites. The paragraph with the most votes is added to the story. This way, stories are built collectively.
+        </div>
+
+        <div class="faq-item">
+            <strong>How do I create a story?</strong>
+            Tap the create button, choose a title, write the first paragraph, and select up to 2 genres (Action, Adventure, Comedy, Drama, Fantasy, Horror, Mystery, Science Fiction, Romance, Thriller, and more).
+        </div>
+
+        <div class="faq-item">
+            <strong>What is the points system?</strong>
+            You earn points by creating stories, contributing paragraphs, winning votes, and receiving likes. Points reflect your participation and contribution to the community.
+        </div>
+
+        <div class="faq-item">
+            <strong>Can I report inappropriate content?</strong>
+            Yes. Every story and candidate paragraph has a report option. Additionally, the app features automatic toxic content detection to maintain a respectful environment.
+        </div>
+
+        <div class="faq-item">
+            <strong>What sign-in methods are available?</strong>
+            You can register with email and password, or sign in with Google, Twitter, Microsoft, or Facebook.
+        </div>
+
+        <div class="faq-item">
+            <strong>Is my data secure?</strong>
+            Yes. We use Google's Firebase with HTTPS encryption and security rules to protect your data. Stories you publish are visible to the community, but your personal account data is protected.
+        </div>
+
+        <div class="faq-item">
+            <strong>How do I delete my account?</strong>
+            Go to Settings and select "Delete account". You can also request it by sending an email to <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a> with the subject "Account deletion request &mdash; Stories Together".
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 JJR Dev Apps. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

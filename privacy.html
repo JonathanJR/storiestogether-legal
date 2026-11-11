@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad — Stories Together</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1a1a2e; background: #f8f9fa; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .lang-switch { text-align: right; margin-bottom: 24px; }
+        .lang-switch a { color: #4361ee; text-decoration: none; font-size: 14px; cursor: pointer; }
+        .lang-switch a:hover { text-decoration: underline; }
+        h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a2e; }
+        .subtitle { color: #6c757d; margin-bottom: 32px; font-size: 14px; }
+        h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a1a2e; border-bottom: 2px solid #4361ee; padding-bottom: 4px; display: inline-block; }
+        h3 { font-size: 16px; margin-top: 20px; margin-bottom: 8px; }
+        p, li { margin-bottom: 8px; color: #495057; }
+        ul { padding-left: 24px; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        th, td { border: 1px solid #dee2e6; padding: 10px 12px; text-align: left; }
+        th { background: #e9ecef; font-weight: 600; }
+        a { color: #4361ee; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #dee2e6; color: #6c757d; font-size: 13px; }
+        .es, .en, .fr { display: none; }
+    </style>
+    <script>
+        function switchLang(lang) {
+            ['es', 'en', 'fr'].forEach(function(l) {
+                var els = document.querySelectorAll('.' + l);
+                for (var i = 0; i < els.length; i++) {
+                    els[i].style.display = l === lang ? 'block' : 'none';
+                }
+            });
+            document.documentElement.lang = lang;
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            var userLang = (navigator.language || navigator.userLanguage || 'en').substring(0, 2);
+            if (['es', 'en', 'fr'].indexOf(userLang) === -1) userLang = 'en';
+            switchLang(userLang);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch">
+        <a onclick="switchLang('es')">Español</a> |
+        <a onclick="switchLang('en')">English</a> |
+        <a onclick="switchLang('fr')">Français</a>
+    </div>
+
+    <!-- ==================== ESPAÑOL ==================== -->
+    <div class="es">
+        <h1>Política de Privacidad</h1>
+        <p class="subtitle">Última actualización: 25 de febrero de 2026</p>
+
+        <p>En <strong>JJR Dev Apps</strong> (en adelante, "nosotros"), nos comprometemos a proteger tu privacidad. Esta política describe cómo recopilamos, usamos y protegemos tus datos personales cuando utilizas la aplicación <strong>Stories Together</strong>.</p>
+
+        <h2>1. Responsable del tratamiento</h2>
+        <p><strong>JJR Dev Apps</strong><br>
+        Email de contacto: <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a></p>
+
+        <h2>2. Datos que recopilamos</h2>
+        <table>
+            <tr><th>Categoría</th><th>Datos</th><th>Finalidad</th></tr>
+            <tr><td>Cuenta de usuario</td><td>Email, nombre, foto de perfil</td><td>Gestión de cuenta y personalización</td></tr>
+            <tr><td>Contenido creado</td><td>Historias, párrafos, candidatos, comentarios, votos</td><td>Funcionalidad principal de la app (escritura colaborativa)</td></tr>
+            <tr><td>Actividad del usuario</td><td>Contribuciones, contribuciones ganadoras, "me gusta" recibidos, historias guardadas</td><td>Sistema de puntos y gamificación</td></tr>
+            <tr><td>Datos técnicos</td><td>Informes de errores, datos de uso, tokens de dispositivo</td><td>Estabilidad de la app y notificaciones push</td></tr>
+        </table>
+
+        <h2>3. Base legal del tratamiento</h2>
+        <ul>
+            <li><strong>Ejecución contractual</strong> (Art. 6.1.b RGPD): procesamiento de datos necesario para la funcionalidad principal de la app (crear historias, votar candidatos, comentar).</li>
+            <li><strong>Interés legítimo</strong> (Art. 6.1.f RGPD): análisis de errores (Firebase Crashlytics), analíticas de uso (Firebase Analytics, Mixpanel) y moderación de contenido (Google Perspective API) para mejorar la estabilidad, experiencia y seguridad de la app.</li>
+            <li><strong>Consentimiento</strong> (Art. 6.1.a RGPD): envío de notificaciones push (opt-in).</li>
+        </ul>
+
+        <h2>4. Métodos de autenticación</h2>
+        <p>Stories Together ofrece los siguientes métodos de inicio de sesión. Al utilizar cualquiera de ellos, recopilamos tu email, nombre y foto de perfil del proveedor correspondiente:</p>
+        <ul>
+            <li>Email y contraseña (con verificación por email)</li>
+            <li>Google Sign-In</li>
+            <li>Facebook Login</li>
+            <li>Twitter (X) OAuth</li>
+            <li>Microsoft OAuth</li>
+        </ul>
+
+        <h2>5. Moderación de contenido</h2>
+        <p>Para mantener un entorno seguro, todo el contenido enviado por los usuarios (títulos de historias, párrafos, candidatos y comentarios) es analizado automáticamente mediante <strong>Google Perspective API</strong> para detectar contenido tóxico. El contenido que supere el umbral de toxicidad establecido será bloqueado automáticamente. Además, los usuarios pueden reportar contenido inapropiado.</p>
+
+        <h2>6. Terceros que procesan datos</h2>
+        <table>
+            <tr><th>Servicio</th><th>Proveedor</th><th>Datos</th><th>Ubicación</th></tr>
+            <tr><td>Autenticación</td><td>Firebase Auth (Google LLC)</td><td>Credenciales de acceso, email, nombre</td><td>EE.UU.</td></tr>
+            <tr><td>Base de datos</td><td>Firebase Firestore (Google LLC)</td><td>Todos los datos de la app</td><td>EE.UU.</td></tr>
+            <tr><td>Almacenamiento</td><td>Firebase Storage (Google LLC)</td><td>Fotos de perfil</td><td>EE.UU.</td></tr>
+            <tr><td>Analíticas</td><td>Firebase Analytics (Google LLC)</td><td>Datos de uso anónimos</td><td>EE.UU.</td></tr>
+            <tr><td>Analíticas</td><td>Mixpanel Inc.</td><td>Eventos de uso anónimos</td><td>EE.UU.</td></tr>
+            <tr><td>Informes de errores</td><td>Firebase Crashlytics (Google LLC)</td><td>Informes de errores</td><td>EE.UU.</td></tr>
+            <tr><td>Rendimiento</td><td>Firebase Performance (Google LLC)</td><td>Métricas de rendimiento</td><td>EE.UU.</td></tr>
+            <tr><td>Notificaciones</td><td>Firebase Cloud Messaging (Google LLC)</td><td>Tokens de dispositivo</td><td>EE.UU.</td></tr>
+            <tr><td>Configuración remota</td><td>Firebase Remote Config (Google LLC)</td><td>Configuración de la app</td><td>EE.UU.</td></tr>
+            <tr><td>Mensajes in-app</td><td>Firebase In-App Messaging (Google LLC)</td><td>Segmentación de usuarios</td><td>EE.UU.</td></tr>
+            <tr><td>Moderación de contenido</td><td>Google Perspective API (Google / Jigsaw)</td><td>Texto enviado por usuarios</td><td>EE.UU.</td></tr>
+            <tr><td>Búsqueda</td><td>Algolia Inc.</td><td>Títulos y metadatos de historias</td><td>EE.UU.</td></tr>
+            <tr><td>Inicio de sesión social</td><td>Google, Facebook, Twitter (X), Microsoft</td><td>Email, nombre, foto de perfil</td><td>EE.UU.</td></tr>
+        </table>
+
+        <h2>7. Transferencias internacionales</h2>
+        <p>Los datos enviados a servicios de Google, Mixpanel, Algolia, Facebook, Twitter y Microsoft (ubicados en EE.UU.) se realizan al amparo de las Cláusulas Contractuales Tipo (CCT) aprobadas por la Comisión Europea y el Marco de Privacidad de Datos UE-EE.UU.</p>
+
+        <h2>8. Período de conservación</h2>
+        <ul>
+            <li><strong>Datos de la cuenta</strong>: mientras tu cuenta esté activa.</li>
+            <li><strong>Contenido creado</strong> (historias, candidatos, comentarios): mientras la cuenta esté activa o según las necesidades de la comunidad.</li>
+            <li><strong>Tras eliminación de cuenta</strong>: todos los datos personales se eliminan en un plazo máximo de 30 días.</li>
+            <li><strong>Informes de errores y analíticas</strong>: según las políticas de retención de Firebase (hasta 90 días) y Mixpanel.</li>
+        </ul>
+
+        <h2>9. Tus derechos (RGPD)</h2>
+        <p>Conforme al Reglamento General de Protección de Datos y la LOPDGDD, tienes derecho a:</p>
+        <ul>
+            <li><strong>Acceso</strong>: solicitar una copia de tus datos personales.</li>
+            <li><strong>Rectificación</strong>: corregir datos inexactos o incompletos.</li>
+            <li><strong>Supresión</strong>: eliminar tus datos y tu cuenta.</li>
+            <li><strong>Limitación</strong>: restringir el tratamiento de tus datos.</li>
+            <li><strong>Portabilidad</strong>: recibir tus datos en un formato estructurado.</li>
+            <li><strong>Oposición</strong>: oponerte al tratamiento de tus datos.</li>
+        </ul>
+        <p>Para ejercer estos derechos, contacta con nosotros en <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a>.</p>
+
+        <h2>10. Derecho a reclamar</h2>
+        <p>Tienes derecho a presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong>: <a href="https://www.aepd.es" target="_blank">www.aepd.es</a>.</p>
+
+        <h2>11. Seguridad</h2>
+        <ul>
+            <li>Todas las comunicaciones entre la app y el servidor están cifradas mediante HTTPS/TLS.</li>
+            <li>La autenticación utiliza Firebase Authentication con proveedores OAuth 2.0 seguros.</li>
+            <li>Las notificaciones push requieren consentimiento explícito del usuario (opt-in).</li>
+            <li>El contenido es moderado automáticamente para prevenir contenido tóxico o inapropiado.</li>
+        </ul>
+
+        <h2>12. Menores</h2>
+        <p>Stories Together no está dirigida a menores de 16 años (LOPDGDD Art. 7). No recopilamos conscientemente datos de menores de esta edad. Si detectamos que un menor se ha registrado sin consentimiento parental, eliminaremos su cuenta.</p>
+
+        <h2>13. Modificaciones</h2>
+        <p>Podemos actualizar esta política de privacidad periódicamente. Te notificaremos los cambios significativos a través de la app. La fecha de última actualización aparece al inicio de este documento.</p>
+
+        <div class="footer">
+            <p>&copy; 2026 JJR Dev Apps. Todos los derechos reservados.</p>
+        </div>
+    </div>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <div class="en">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Last updated: February 25, 2026</p>
+
+        <p>At <strong>JJR Dev Apps</strong> ("we", "us"), we are committed to protecting your privacy. This policy describes how we collect, use, and protect your personal data when you use the <strong>Stories Together</strong> application.</p>
+
+        <h2>1. Data controller</h2>
+        <p><strong>JJR Dev Apps</strong><br>
+        Contact email: <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a></p>
+
+        <h2>2. Data we collect</h2>
+        <table>
+            <tr><th>Category</th><th>Data</th><th>Purpose</th></tr>
+            <tr><td>User account</td><td>Email, name, profile photo</td><td>Account management and personalization</td></tr>
+            <tr><td>User-created content</td><td>Stories, paragraphs, candidates, comments, votes</td><td>Core app functionality (collaborative writing)</td></tr>
+            <tr><td>User activity</td><td>Contributions, winning contributions, likes received, saved stories</td><td>Points system and gamification</td></tr>
+            <tr><td>Technical data</td><td>Crash reports, usage data, device tokens</td><td>App stability and push notifications</td></tr>
+        </table>
+
+        <h2>3. Legal basis for processing</h2>
+        <ul>
+            <li><strong>Contractual performance</strong> (Art. 6.1.b GDPR): data processing necessary for the app's core functionality (creating stories, voting on candidates, commenting).</li>
+            <li><strong>Legitimate interest</strong> (Art. 6.1.f GDPR): crash analysis (Firebase Crashlytics), usage analytics (Firebase Analytics, Mixpanel) and content moderation (Google Perspective API) to improve app stability, experience and safety.</li>
+            <li><strong>Consent</strong> (Art. 6.1.a GDPR): push notification delivery (opt-in).</li>
+        </ul>
+
+        <h2>4. Authentication methods</h2>
+        <p>Stories Together offers the following sign-in methods. When using any of them, we collect your email, name, and profile photo from the corresponding provider:</p>
+        <ul>
+            <li>Email and password (with email verification)</li>
+            <li>Google Sign-In</li>
+            <li>Facebook Login</li>
+            <li>Twitter (X) OAuth</li>
+            <li>Microsoft OAuth</li>
+        </ul>
+
+        <h2>5. Content moderation</h2>
+        <p>To maintain a safe environment, all user-submitted content (story titles, paragraphs, candidates, and comments) is automatically analyzed using <strong>Google Perspective API</strong> to detect toxic content. Content exceeding the established toxicity threshold will be automatically blocked. Additionally, users can report inappropriate content.</p>
+
+        <h2>6. Third parties that process data</h2>
+        <table>
+            <tr><th>Service</th><th>Provider</th><th>Data</th><th>Location</th></tr>
+            <tr><td>Authentication</td><td>Firebase Auth (Google LLC)</td><td>Login credentials, email, name</td><td>USA</td></tr>
+            <tr><td>Database</td><td>Firebase Firestore (Google LLC)</td><td>All app data</td><td>USA</td></tr>
+            <tr><td>Storage</td><td>Firebase Storage (Google LLC)</td><td>Profile photos</td><td>USA</td></tr>
+            <tr><td>Analytics</td><td>Firebase Analytics (Google LLC)</td><td>Anonymous usage data</td><td>USA</td></tr>
+            <tr><td>Analytics</td><td>Mixpanel Inc.</td><td>Anonymous usage events</td><td>USA</td></tr>
+            <tr><td>Crash reporting</td><td>Firebase Crashlytics (Google LLC)</td><td>Crash reports</td><td>USA</td></tr>
+            <tr><td>Performance</td><td>Firebase Performance (Google LLC)</td><td>Performance metrics</td><td>USA</td></tr>
+            <tr><td>Notifications</td><td>Firebase Cloud Messaging (Google LLC)</td><td>Device tokens</td><td>USA</td></tr>
+            <tr><td>Remote config</td><td>Firebase Remote Config (Google LLC)</td><td>App configuration</td><td>USA</td></tr>
+            <tr><td>In-app messaging</td><td>Firebase In-App Messaging (Google LLC)</td><td>User segmentation</td><td>USA</td></tr>
+            <tr><td>Content moderation</td><td>Google Perspective API (Google / Jigsaw)</td><td>User-submitted text</td><td>USA</td></tr>
+            <tr><td>Search</td><td>Algolia Inc.</td><td>Story titles and metadata</td><td>USA</td></tr>
+            <tr><td>Social login</td><td>Google, Facebook, Twitter (X), Microsoft</td><td>Email, name, profile photo</td><td>USA</td></tr>
+        </table>
+
+        <h2>7. International transfers</h2>
+        <p>Data sent to Google, Mixpanel, Algolia, Facebook, Twitter, and Microsoft services (located in the USA) is carried out under Standard Contractual Clauses (SCCs) approved by the European Commission and the EU-US Data Privacy Framework.</p>
+
+        <h2>8. Data retention period</h2>
+        <ul>
+            <li><strong>Account data</strong>: as long as your account is active.</li>
+            <li><strong>Created content</strong> (stories, candidates, comments): while the account is active or as needed by the community.</li>
+            <li><strong>After account deletion</strong>: all personal data is deleted within a maximum of 30 days.</li>
+            <li><strong>Crash reports and analytics</strong>: according to Firebase retention policies (up to 90 days) and Mixpanel.</li>
+        </ul>
+
+        <h2>9. Your rights (GDPR)</h2>
+        <p>Under the General Data Protection Regulation, you have the right to:</p>
+        <ul>
+            <li><strong>Access</strong>: request a copy of your personal data.</li>
+            <li><strong>Rectification</strong>: correct inaccurate or incomplete data.</li>
+            <li><strong>Erasure</strong>: delete your data and your account.</li>
+            <li><strong>Restriction</strong>: restrict the processing of your data.</li>
+            <li><strong>Portability</strong>: receive your data in a structured format.</li>
+            <li><strong>Objection</strong>: object to the processing of your data.</li>
+        </ul>
+        <p>To exercise these rights, contact us at <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a>.</p>
+
+        <h2>10. Right to complain</h2>
+        <p>You have the right to file a complaint with the <strong>Spanish Data Protection Agency (AEPD)</strong>: <a href="https://www.aepd.es" target="_blank">www.aepd.es</a>.</p>
+
+        <h2>11. Security</h2>
+        <ul>
+            <li>All communications between the app and the server are encrypted via HTTPS/TLS.</li>
+            <li>Authentication uses Firebase Authentication with secure OAuth 2.0 providers.</li>
+            <li>Push notifications require explicit user consent (opt-in).</li>
+            <li>Content is automatically moderated to prevent toxic or inappropriate material.</li>
+        </ul>
+
+        <h2>12. Minors</h2>
+        <p>Stories Together is not intended for individuals under 16 years of age. We do not knowingly collect data from minors. If we detect that a minor has registered without parental consent, we will delete their account.</p>
+
+        <h2>13. Changes</h2>
+        <p>We may update this privacy policy periodically. We will notify you of significant changes through the app. The last update date appears at the beginning of this document.</p>
+
+        <div class="footer">
+            <p>&copy; 2026 JJR Dev Apps. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- ==================== FRANÇAIS ==================== -->
+    <div class="fr">
+        <h1>Politique de Confidentialité</h1>
+        <p class="subtitle">Dernière mise à jour : 25 février 2026</p>
+
+        <p>Chez <strong>JJR Dev Apps</strong> (ci-après « nous »), nous nous engageons à protéger votre vie privée. Cette politique décrit comment nous collectons, utilisons et protégeons vos données personnelles lorsque vous utilisez l'application <strong>Stories Together</strong>.</p>
+
+        <h2>1. Responsable du traitement</h2>
+        <p><strong>JJR Dev Apps</strong><br>
+        Email de contact : <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a></p>
+
+        <h2>2. Données que nous collectons</h2>
+        <table>
+            <tr><th>Catégorie</th><th>Données</th><th>Finalité</th></tr>
+            <tr><td>Compte utilisateur</td><td>Email, nom, photo de profil</td><td>Gestion du compte et personnalisation</td></tr>
+            <tr><td>Contenu créé</td><td>Histoires, paragraphes, candidats, commentaires, votes</td><td>Fonctionnalité principale de l'app (écriture collaborative)</td></tr>
+            <tr><td>Activité de l'utilisateur</td><td>Contributions, contributions gagnantes, « j'aime » reçus, histoires sauvegardées</td><td>Système de points et gamification</td></tr>
+            <tr><td>Données techniques</td><td>Rapports d'erreurs, données d'utilisation, jetons d'appareil</td><td>Stabilité de l'app et notifications push</td></tr>
+        </table>
+
+        <h2>3. Base juridique du traitement</h2>
+        <ul>
+            <li><strong>Exécution contractuelle</strong> (Art. 6.1.b RGPD) : traitement des données nécessaire au fonctionnement principal de l'app (créer des histoires, voter pour des candidats, commenter).</li>
+            <li><strong>Intérêt légitime</strong> (Art. 6.1.f RGPD) : analyse des erreurs (Firebase Crashlytics), analyses d'utilisation (Firebase Analytics, Mixpanel) et modération du contenu (Google Perspective API) pour améliorer la stabilité, l'expérience et la sécurité de l'app.</li>
+            <li><strong>Consentement</strong> (Art. 6.1.a RGPD) : envoi de notifications push (opt-in).</li>
+        </ul>
+
+        <h2>4. Méthodes d'authentification</h2>
+        <p>Stories Together propose les méthodes de connexion suivantes. En utilisant l'une d'entre elles, nous collectons votre email, nom et photo de profil du fournisseur correspondant :</p>
+        <ul>
+            <li>Email et mot de passe (avec vérification par email)</li>
+            <li>Google Sign-In</li>
+            <li>Facebook Login</li>
+            <li>Twitter (X) OAuth</li>
+            <li>Microsoft OAuth</li>
+        </ul>
+
+        <h2>5. Modération du contenu</h2>
+        <p>Pour maintenir un environnement sûr, tout le contenu soumis par les utilisateurs (titres d'histoires, paragraphes, candidats et commentaires) est automatiquement analysé à l'aide de <strong>Google Perspective API</strong> pour détecter le contenu toxique. Le contenu dépassant le seuil de toxicité établi sera automatiquement bloqué. De plus, les utilisateurs peuvent signaler du contenu inapproprié.</p>
+
+        <h2>6. Tiers qui traitent les données</h2>
+        <table>
+            <tr><th>Service</th><th>Fournisseur</th><th>Données</th><th>Localisation</th></tr>
+            <tr><td>Authentification</td><td>Firebase Auth (Google LLC)</td><td>Identifiants de connexion, email, nom</td><td>États-Unis</td></tr>
+            <tr><td>Base de données</td><td>Firebase Firestore (Google LLC)</td><td>Toutes les données de l'app</td><td>États-Unis</td></tr>
+            <tr><td>Stockage</td><td>Firebase Storage (Google LLC)</td><td>Photos de profil</td><td>États-Unis</td></tr>
+            <tr><td>Analyses</td><td>Firebase Analytics (Google LLC)</td><td>Données d'utilisation anonymes</td><td>États-Unis</td></tr>
+            <tr><td>Analyses</td><td>Mixpanel Inc.</td><td>Événements d'utilisation anonymes</td><td>États-Unis</td></tr>
+            <tr><td>Rapports d'erreurs</td><td>Firebase Crashlytics (Google LLC)</td><td>Rapports d'erreurs</td><td>États-Unis</td></tr>
+            <tr><td>Performance</td><td>Firebase Performance (Google LLC)</td><td>Métriques de performance</td><td>États-Unis</td></tr>
+            <tr><td>Notifications</td><td>Firebase Cloud Messaging (Google LLC)</td><td>Jetons d'appareil</td><td>États-Unis</td></tr>
+            <tr><td>Config. à distance</td><td>Firebase Remote Config (Google LLC)</td><td>Configuration de l'app</td><td>États-Unis</td></tr>
+            <tr><td>Messages in-app</td><td>Firebase In-App Messaging (Google LLC)</td><td>Segmentation des utilisateurs</td><td>États-Unis</td></tr>
+            <tr><td>Modération</td><td>Google Perspective API (Google / Jigsaw)</td><td>Texte soumis par les utilisateurs</td><td>États-Unis</td></tr>
+            <tr><td>Recherche</td><td>Algolia Inc.</td><td>Titres et métadonnées d'histoires</td><td>États-Unis</td></tr>
+            <tr><td>Connexion sociale</td><td>Google, Facebook, Twitter (X), Microsoft</td><td>Email, nom, photo de profil</td><td>États-Unis</td></tr>
+        </table>
+
+        <h2>7. Transferts internationaux</h2>
+        <p>Les données envoyées aux services de Google, Mixpanel, Algolia, Facebook, Twitter et Microsoft (situés aux États-Unis) sont effectuées en vertu des Clauses Contractuelles Types (CCT) approuvées par la Commission européenne et du Cadre de protection des données UE-États-Unis.</p>
+
+        <h2>8. Durée de conservation</h2>
+        <ul>
+            <li><strong>Données du compte</strong> : tant que votre compte est actif.</li>
+            <li><strong>Contenu créé</strong> (histoires, candidats, commentaires) : tant que le compte est actif ou selon les besoins de la communauté.</li>
+            <li><strong>Après suppression du compte</strong> : toutes les données personnelles sont supprimées dans un délai maximum de 30 jours.</li>
+            <li><strong>Rapports d'erreurs et analyses</strong> : selon les politiques de rétention de Firebase (jusqu'à 90 jours) et Mixpanel.</li>
+        </ul>
+
+        <h2>9. Vos droits (RGPD)</h2>
+        <p>Conformément au Règlement Général sur la Protection des Données, vous avez le droit de :</p>
+        <ul>
+            <li><strong>Accès</strong> : demander une copie de vos données personnelles.</li>
+            <li><strong>Rectification</strong> : corriger des données inexactes ou incomplètes.</li>
+            <li><strong>Suppression</strong> : supprimer vos données et votre compte.</li>
+            <li><strong>Limitation</strong> : restreindre le traitement de vos données.</li>
+            <li><strong>Portabilité</strong> : recevoir vos données dans un format structuré.</li>
+            <li><strong>Opposition</strong> : vous opposer au traitement de vos données.</li>
+        </ul>
+        <p>Pour exercer ces droits, contactez-nous à <a href="mailto:jonathandevapps@gmail.com">jonathandevapps@gmail.com</a>.</p>
+
+        <h2>10. Droit de réclamation</h2>
+        <p>Vous avez le droit de déposer une réclamation auprès de l'<strong>Agence Espagnole de Protection des Données (AEPD)</strong> : <a href="https://www.aepd.es" target="_blank">www.aepd.es</a>.</p>
+
+        <h2>11. Sécurité</h2>
+        <ul>
+            <li>Toutes les communications entre l'app et le serveur sont chiffrées via HTTPS/TLS.</li>
+            <li>L'authentification utilise Firebase Authentication avec des fournisseurs OAuth 2.0 sécurisés.</li>
+            <li>Les notifications push nécessitent le consentement explicite de l'utilisateur (opt-in).</li>
+            <li>Le contenu est automatiquement modéré pour prévenir les contenus toxiques ou inappropriés.</li>
+        </ul>
+
+        <h2>12. Mineurs</h2>
+        <p>Stories Together n'est pas destinée aux personnes de moins de 16 ans. Nous ne collectons pas sciemment de données de mineurs. Si nous détectons qu'un mineur s'est inscrit sans consentement parental, nous supprimerons son compte.</p>
+
+        <h2>13. Modifications</h2>
+        <p>Nous pouvons mettre à jour cette politique de confidentialité périodiquement. Nous vous informerons des changements significatifs via l'app. La date de dernière mise à jour figure au début de ce document.</p>
+
+        <div class="footer">
+            <p>&copy; 2026 JJR Dev Apps. Tous droits réservés.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
